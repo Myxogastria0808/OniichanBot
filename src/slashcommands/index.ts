@@ -1,6 +1,6 @@
 import { CacheType, Interaction, GatewayIntentBits, Client, Events } from 'discord.js';
 import dotenv from 'dotenv';
-import { ping } from './commands/utilities';
+import { upload } from './commands/utilities';
 
 dotenv.config();
 
@@ -17,9 +17,9 @@ client.once('ready', () => {
 
 client.on(Events.InteractionCreate, async (interaction: Interaction<CacheType>) => {
     if (interaction.isChatInputCommand()) {
-        if (interaction.commandName === ping.data.name) {
+        if (interaction.commandName === upload.data.name) {
             try {
-                await ping.execute(interaction);
+                await upload.execute(interaction);
             } catch (error) {
                 console.error(error);
                 if (interaction.replied || interaction.deferred) {

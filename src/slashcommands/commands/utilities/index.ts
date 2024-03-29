@@ -1,6 +1,6 @@
 import { CommandInteraction, SlashCommandBuilder } from 'discord.js';
 
-const ping = {
+const upload = {
     data: new SlashCommandBuilder()
         .setName('upload')
         .setDescription('艦これの画像をアップロードしてください。')
@@ -15,4 +15,4 @@ const ping = {
     },
 };
 
-export { ping };
+export { upload };

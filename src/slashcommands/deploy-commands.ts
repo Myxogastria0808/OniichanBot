@@ -1,11 +1,11 @@
 import { REST, Routes, RESTPostAPIChatInputApplicationCommandsJSONBody } from 'discord.js';
 import dotenv from 'dotenv';
 import { checkIsString } from '../types/env';
-import { ping } from './commands/utilities';
+import { upload } from './commands/utilities';
 
 dotenv.config();
 
-const commands: RESTPostAPIChatInputApplicationCommandsJSONBody[] = [ping.data.toJSON()];
+const commands: RESTPostAPIChatInputApplicationCommandsJSONBody[] = [upload.data.toJSON()];
 
 const token: string = checkIsString(process.env.TOKEN);
 const applicationId: string = checkIsString(process.env.APPLICATIONID);
