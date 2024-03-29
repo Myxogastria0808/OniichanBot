@@ -1,6 +1,6 @@
 import { CacheType, Interaction, GatewayIntentBits, Client, Events } from 'discord.js';
 import dotenv from 'dotenv';
-import { ping } from './commands/utilities/ping';
+import { ping } from './commands/utilities';
 
 dotenv.config();
 

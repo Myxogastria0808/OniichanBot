@@ -1,6 +1,6 @@
 import { REST, Routes } from 'discord.js';
 import dotenv from 'dotenv';
-import { checkIsString } from './types/index';
+import { checkIsString } from '../types/env';
 
 //.envファイルを読み込む
 dotenv.config();

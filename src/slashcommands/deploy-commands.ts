@@ -1,7 +1,7 @@
 import { REST, Routes, RESTPostAPIChatInputApplicationCommandsJSONBody } from 'discord.js';
 import dotenv from 'dotenv';
-import { checkIsString } from './types/index';
-import { ping } from './commands/utilities/ping';
+import { checkIsString } from '../types/env';
+import { ping } from './commands/utilities';
 
 dotenv.config();
 

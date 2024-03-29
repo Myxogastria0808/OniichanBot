@@ -7,9 +7,11 @@
     "author": "'Myxogastria0808' <r.rstudio.c@gmail.com>",
     "license": "MIT",
     "scripts": {
-        "dev": "ts-node-dev --respawn ./src/index.ts",
-        "start": "node dist/index.js",
-        "register": "node dist/deploy-commands.js",
+        "dev:slash": "ts-node-dev --respawn ./src/slashcommands/index.ts",
+        "start:slash": "node dist/slashcommands/index.js",
+        "register:slash": "node dist/slashcommands/deploy-commands.js",
+        "dev:webhook": "ts-node-dev --respawn ./src/webhook/index.ts",
+        "start:webhook": "node dist/webhook/index.js",
         "compile": "tsc -p ."
     },
     "devDependencies": {
